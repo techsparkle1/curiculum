@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Nunito";
+  width: 1200px auto;
+  margin: 0;
+}
+
+/* NAV */
+.nav-bar {
+  background-color: #ff90bb;
+}
+.nav-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 20px 20px;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-content {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #d80b59;
+}
+
+.nav-content:link,
+.nav-content:visited {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* HEADER */
+.section-head {
+  background-color: #f8f8e1;
+  padding: 60px 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.head-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.head-img .web-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffc1da;
+  box-shadow: 0 0 20px #ff90bb;
+}
+
+.head-content {
+  max-width: 400px;
+  text-align: center;
+}
+
+.head-title {
+  color: #ff90bb;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.head-text,
+.head-texts {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.highlight {
+  color: #8accd5;
+  font-weight: bold;
+}
+
+.head-button {
+  text-decoration: none;
+  color: #d80b59;
+  cursor: pointer;
+}
+.head-button:hover {
+  background-color: #8accd5;
+}
+.head-content button {
+  border: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ff90bb;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+/* ABOUT ME */
+
+.section-me {
+  background: linear-gradient(to right, #fef9d7, #f7f7b9);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.me-content {
+  text-align: center;
+}
+
+.me-title {
+  font-size: 2.5rem;
+  color: #d80b59;
+  margin-bottom: 1.5rem;
+
+  letter-spacing: 1px;
+}
+
+.me-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* PROJECTS */
+.section-skills {
+  background-color: #f8f8e1;
+  padding: 60px 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.skills-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills,
+.projects {
+  background-color: #ffc1da;
+  border-radius: 20px;
+  padding: 30px;
+  flex: 1 1 45%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #e6407f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill-group h4 {
+  color: #42a1ad;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  padding-left: 24px;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff90bb;
+  font-weight: bold;
+}
+
+.project-list li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-list li a:hover {
+  color: #8accd5;
+  text-decoration: underline;
+}
+
+.contact-section {
+  background-color: #f8f8e1;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+ion-icon {
+  color: #ff90bb;
+  font-size: 1.5rem;
+}
+
+/* ---------- MOBILE RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  /* Header Section */
+  .head-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .head-img .web-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .head-content {
+    padding: 20px;
+  }
+
+  .head-title {
+    font-size: 1.5rem;
+  }
+
+  .head-text,
+  .head-texts {
+    font-size: 1rem;
+  }
+
+  .head-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Skills and Projects Section */
+  .skills-projects-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skills,
+  .projects {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+    padding-left: 20px;
+  }
+
+  /* Contact Section */
+  .contact-list li {
+    font-size: 1rem;
+    gap: 8px;
+  }
+
+  ion-icon {
+    font-size: 1.2rem;
+  }
+}
